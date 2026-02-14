@@ -1,0 +1,50 @@
+# Terraform
+#
+# Local Terraform directories
+.terraform/
+.terragrunt-cache/
+
+# Lock file
+# The dependency lock file (.terraform.lock.hcl) should be committed to source control.
+# However, if you are working in a heterogeneous environment (Windows, macOS, Linux),
+# you may need to add it to .gitignore and manage it with `terraform providers lock`
+# for cross-platform checksums, or just ignore it in a personal setup to always get the newest provider version.
+# The general recommendation is to include it for consistent dependency versions across teams.
+# .terraform.lock.hcl
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+# You should use a remote backend for state management instead of committing state files.
+
+# Crash log files
+crash.log
+
+# Ignore any .tfvars files that are generated automatically for each Terraform run.
+# Most .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+# However, files containing sensitive data, such as production secrets, should be ignored.
+# A common pattern is to ignore all .tfvars files by default, then use a negated pattern
+# to explicitly include an example or non-sensitive one (e.g., !example.tfvars).
+# *.tfvars
+# *.tfvars.json
+
+# Ignore override files as they are usually used to override resources locally
+# and so are not checked in.
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+# If you do wish to add an override file to version control, use a negated pattern
+# (e.g., !example_override.tf).
+
+# Include plan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore a specific file named 'credentials' (or similar) that might contain sensitive information.
+credentials
