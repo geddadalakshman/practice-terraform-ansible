@@ -15,6 +15,7 @@
 # Terraform state files
 *.tfstate
 *.tfstate.*
+.terraform.lock.hcl
 # You should use a remote backend for state management instead of committing state files.
 
 # Crash log files
